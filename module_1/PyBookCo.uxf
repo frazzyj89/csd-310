@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Author
+--
+first_name
+last_name
+phone
+email</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>20</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Book
+--
+book_isbn
+book_name
+book_price
+publisher_name
+publisher_code
+publisher_address</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>50</y>
+      <w>260</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+m1=1.*
+m2=1.1</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>290</y>
+      <w>240</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Author Document
+--
+{
+	"first_name": "Cody",
+	"last_name": "Kween",
+	"phone": 555-555-5555,
+	"email": "kweeny@gmail.com"
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>280</y>
+      <w>320</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Book Document
+--
+{
+	"book_isbn": 1111m2222,
+	"book_name": "Who took Molly?",
+	"book_price": "$99",
+	"publisher_name": "Great Deals",
+	"publisher_code": 1234,
+	"publisher_address": "1234 Ski Lane"
+},
+{
+	"book_isbn": 4321m8765,
+	"book_name": "Want to go skiing?",
+	"book_price": "$80",
+	"publisher_name": "Between the Lines, INC",
+	"publisher_code": 90210,
+	"publisher_address": "808 Dollar Road"
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>330</y>
+      <w>230</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+m1=1.*
+m2=1.1</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
