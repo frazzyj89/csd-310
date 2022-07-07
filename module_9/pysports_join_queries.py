@@ -1,6 +1,6 @@
 #JOshua Frazier
-#july 3, 2022
-#module 8.3 pysport queries
+#july 10, 2022
+#module 9.2 pysport join_queries
 
 import mysql.connector
 from mysql.connector import errorcode
@@ -27,21 +27,12 @@ except mysql.connector.Error as err:
 
     else:
         print(err)
-
-
 # Query
-query_1 = "SELECT team_id, team_name, mascot FROM team"
-query_2 = "SELECT player_id, first_name, last_name, team_id FROM player"
+query_1 = "SELECT player_id, first_name, last_name, team_name FROM player INNER JOIN team ON player.team_id = team.team_id"
 # create cursor
 cursor = db.cursor()
 # execute
 cursor.execute(query_1)
-teams = cursor.fetchall()
-print("\n -- DISPLAYING TEAM RECORDS --")
-for team in teams:
-    print("\n Team ID: {} \n Team Name: {} \n Mascot : {}" .format(team[0], team[1], team[2]))
-
-cursor.execute(query_2)
 players = cursor.fetchall()
 print("\n -- DISPLAYING PLAYER RECORDS -- ")
 for player in players:

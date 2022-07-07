@@ -1,19 +1,19 @@
 /*
     Title: db_init.sql
-    Author: Professor Krasso
-    Date: 15 July 2020
+    Author: Joshua Frazier
+    Date: 7/3/2022
     Description: pysports database initialization script.
 */
 
 -- drop test user if exists 
-DROP USER IF EXISTS 'pysports_user'@'localhost';
+DROP USER IF EXISTS 'root'@'127.0.0.1';
 
 
 -- create pysports_user and grant them all privileges to the pysports database 
-CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'seasprite';
+CREATE USER 'root'@'127.0.0.1' IDENTIFIED WITH mysql_native_password BY '5133Frazi3r!';
 
 -- grant all privileges to the pysports database to user pysports_user on localhost 
-GRANT ALL PRIVILEGES ON pysports.* TO'pysports_user'@'localhost';
+GRANT ALL PRIVILEGES ON pysports.* TO'root'@'127.0.0.1';
 
 
 -- drop tables if they are present
